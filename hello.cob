@@ -1,13 +1,17 @@
        IDENTIFICATION DIVISION.
-           PROGRAM-ID. HELLO.
-           AUTHOR. PETR.
-           INSTALLATION. MyComputer.
-           DATE-WRITTEN. 21/06/2021.
-           DATE-COMPILED. 21/06/2021.
-           SECURITY. No.
+       PROGRAM-ID. HELLO.
+       AUTHOR. PETR.
+       INSTALLATION. MyComputer.
+       DATE-WRITTEN. 21/06/2021.
+       DATE-COMPILED. 21/06/2021.
+       SECURITY. No.
+       
        ENVIRONMENT DIVISION.
        DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 HELLO PIC X(16) VALUE IS "Hello new World!".
+       
        PROCEDURE DIVISION.
        BEGIN.
-           DISPLAY "Hello World!".
+           DISPLAY HELLO.
            STOP RUN.
